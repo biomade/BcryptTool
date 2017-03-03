@@ -1,0 +1,33 @@
+{
+  "name": "bcrypttoolsusingexpress2",
+  "version": "0.0.0",
+  "description": "A set of tools",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha -u tdd tests/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "hbs": "~4.0.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "stylus": "0.54.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://biomade55@bitbucket.org/biomade55/lauriestools.git"
+  },
+  "author": "Laurie Kern",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}

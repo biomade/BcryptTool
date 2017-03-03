@@ -1,0 +1,14 @@
+<a href="/">Return to Main Page</a>&nbsp;<a href="validate">Validate an Encrypted Word</a>
+<p>{{title}}</p>
+<form  action="encrypt" method="post">
+<label for="rawtext">Text To Encrypt: </label>
+<input type="text" name="rawtext" size="25" maxlength="20" value={{encryption.rawtext}}>
+<br/><br/>
+<label for="encryptedword">Encrypted Word: </label>
+<input type="text" name="encryptedword" size="80" maxlength="80" readonly="true" value={{encryption.encryptedword}}>
+<br/><br/>
+<label for="saltrounts">Salting Rounds: </label>
+<input type="number" name="saltrounds" value={{encryption.saltrounds}}>
+<br/><br/>
+<button type="submit" name="button">Encrypt That Word</button>
+</form>

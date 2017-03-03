@@ -1,0 +1,16 @@
+
+  <script type='text/javascript'>
+    alert('Validation Result: '+{{msg}});
+  </script>
+
+<a href="/">Return to Main Page</a>&nbsp;<a href="encrypt">Encrypted Word</a>
+<p>{{title}}</p>
+<form  action="validate" method="post">
+<label for="rawtext">Raw Text: </label>
+<input type="text" name="rawtext" size="25" maxlength="20" value={{encryption.rawtext}}>
+<br/><br/>
+<label for="encryptedword">Encrypted Word: </label>
+<input type="text" name="encryptedword" size="80" maxlength="80"  value={{encryption.encryptedword}}>
+<br/><br/>
+<button type="submit" name="button">Validate That Word</button>
+</form>

@@ -1,0 +1,23 @@
+
+//DONE: put in a subdirectory so I can add other tools to project?
+//DONE: Add GIT integration
+
+//DONE: add bcrypt npm package
+//DONE: recreate the bcrypt route,
+//DONE: recreate the encrypt form,
+//DONE: code in the encryption
+
+//DONE: create external model for encryption data?
+//DONE: create a controller for the encryption routes
+//TODO: Add Unit Tests before going any further
+https://www.codementor.io/nodejs/tutorial/unit-testing-nodejs-tdd-mocha-sinon
+install mocha globally, chai locally as a dev only dependancy
+
+//DONE: Build out the validation page
+//DONE: code in the validation of word
+//IDEA: Pass values from the encrypt page to the validation page
+
+
+//NOTE: THEN move on to Ember
+//NOTE: Then do again in Electron
+=======
