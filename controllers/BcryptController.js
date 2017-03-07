@@ -21,15 +21,15 @@ exports.EncryptShow = function(request, response){
 exports.EncryptWord = function(request, response){
   //get the data from the form
   //time to use bcrypt!!
-  var e = new encryption();
-  //is the req.body a json object?
+  var e = new encryption(); 
+  // the req.body is a json object
   e.saltrounds = parseInt(request.body.saltrounds, 10);
   e.rawtext = request.body.rawtext;
   var salt = bcrypt.genSaltSync(e.saltrounds);
   e.encryptedword = bcrypt.hashSync(e.rawtext, salt);
   response.render('bcrypt/encrypt', {
     title: 'Welcome to the Bcrypt - Encryption page results',
-    encryption: e
+   encryption: e  
 	});
 };
 
@@ -42,7 +42,7 @@ exports.ValidateWord = function(request, response){
   //get the data from the form
   //time to use bcrypt!!
   var e = new encryption();
-  //is the req.body a json object?
+  //the req.body is json object
   e.rawtext = request.body.rawtext;
   e.encryptedword = request.body.encryptedword
   bcrypt.compare(request.body.rawtext, request.body.encryptedword, function(err, isMatch) {
