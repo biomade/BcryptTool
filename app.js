@@ -17,7 +17,7 @@ app.set('view engine', 'hbs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 
-app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.urlencoded({ extended: false }));
 //app.use(bodyParser.json());
 app.use(bodyParser.json())
 
@@ -28,12 +28,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 require(path.join(global.appRoot, 'routes/router.js'))(app); //this passes the app into the function on the other end
 
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+// // catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   var err = new Error('Sorry, but that Page was Not Found');
+//   err.status = 404;
+//   next(err);
+// });
 
 // error handler
 app.use(function(err, req, res, next) {

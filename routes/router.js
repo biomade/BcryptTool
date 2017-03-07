@@ -27,4 +27,12 @@ module.exports = function(app){
     app.post('/bcrypt/validate', function(req,res, next){
       BcryptController.ValidateWord(req,res)
     });
+
+
+    // // catch 404 and forward to error handler
+    app.use(function(req, res, next) {
+      var err = new Error('Sorry, but that Page was Not Found');
+      err.status = 404;
+      next(err);
+    });
 };
